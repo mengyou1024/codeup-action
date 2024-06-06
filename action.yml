@@ -1,0 +1,21 @@
+name: 'codeup-action'
+description: 'codeup action'
+inputs:
+  accessKeyId:
+    description: 'AccessKeyId'
+    required: true
+  accessKeySecret:
+    description: 'AccessKeySecret'
+    required: true
+  accessToken:
+    description: 'AccessToken'
+    required: true
+  organizationId:
+    description: 'organizationId'
+    required: true
+  repositoryName:
+    description: 'RepositoryName'
+    required: true
+runs:
+  using: 'node20'
+  main: 'index.js'
